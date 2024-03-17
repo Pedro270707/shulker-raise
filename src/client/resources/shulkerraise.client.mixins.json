@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "net.pedroricardo.mixin.client",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "BlockEntityOffsetMixin",
+    "DoNotRenderMixin",
+    "RenderSideMixin",
+    "ShulkerOffsetMixin",
+    "ShulkerUpdateWorldMixin",
+    "compat.DoNotRenderSodiumMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

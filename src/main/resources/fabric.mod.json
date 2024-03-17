@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shulkerraise",
+	"version": "1.0.0",
+	"name": "Shulker Raise",
+	"description": "This mod makes the block on a shulker box go up when it is opened",
+	"authors": [
+		"Pedro Ricardo"
+	],
+	"contact": {
+		"homepage": "https://pedroricardo.net/",
+		"sources": "https://github.com/Pedro270707/shulker-raise"
+	},
+	"license": "AGPL-3.0",
+	"icon": "assets/shulkerraise/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+          	"net.pedroricardo.ShulkerRaiseClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "shulkerraise.client.mixins.json",
+			"environment": "client"
+		}
+	],
+
+	"accessWidener": "shulkerraise.accesswidener",
+
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
